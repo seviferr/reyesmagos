@@ -1,0 +1,299 @@
+/*Etiquetas generales*/
+a, a:hover, a:active, a:visited{
+	text-decoration: none;
+	/*color: #066986;*/
+}
+body{
+	background-color: #E9EAED;
+}
+header{
+	position:absolute;
+	width: 100%;
+}
+h1{
+	padding-left:50px!important;
+	text-shadow: -1px 0 black, 0 1px black,
+	  1px 0 black, 0 -1px black;
+}
+h2{
+	margin-top:5px;
+	font-family: 'Josefin Sans';
+	color: #066986;
+}
+
+/*Header*/
+.header-content{
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#066682', endColorstr = '#088eb4');
+	/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+	/*Element must have a height (not auto)*/
+	/*All filters must be placed together*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#066682', endColorstr = '#088eb4')";
+	/*Element must have a height (not auto)*/
+	/*All filters must be placed together*/
+	background-image: -moz-linear-gradient(top, #066682, #088eb4);
+	background-image: -ms-linear-gradient(top, #066682, #088eb4);
+	background-image: -o-linear-gradient(top, #066682, #088eb4);
+	background-image: -webkit-gradient(linear, center top, center bottom, from(#066682), to(#088eb4));
+	background-image: -webkit-linear-gradient(top, #066682, #088eb4);
+	background-image: linear-gradient(top, #066682, #088eb4);
+	/*--IE9 DOES NOT SUPPORT CSS3 GRADIENT BACKGROUNDS--*/
+	height: 100px;
+/*
+	background-image: -webkit-linear-gradient(#a05020, #dd6930);
+	background-image: -moz-linear-gradient(#a05020, #dd6930);
+	background-image: -o-linear-gradient(#a05020, #dd6930);
+	background-image: linear-gradient(#a05020, #dd6930);*/
+}
+
+.iconomagos{
+	/*background-image: url('../img/minimagos.png');
+	background-position: right;
+	background-size: cover;
+	-ms-behavior: url(css/backgroundsize.htc);*/
+	max-width: 100%;
+	overflow: hidden;
+
+}
+.iconomagos img{
+	
+	
+}
+
+header h3{
+	color:white;
+}
+header a{
+	color: #d6fdff;
+	font-size: 14px;
+}
+
+header a:hover{
+	color: black;
+	text-decoration: none;
+}
+
+
+#greeting{
+	max-height: 25px;
+	overflow: hidden;
+}
+
+
+/*Main*/
+.main{
+	padding-top: 100px;
+}
+.fullBG{
+	height: 100%;
+	background-image: url('../img/magosBG3.jpg');
+	background-position: right;
+	background-size: cover;
+	-ms-behavior: url(css/backgroundsize.htc);
+}
+
+.page{
+	margin-top: 50px;
+}
+.carta_reyes{
+	margin-bottom: 20px;
+	margin:0px 10px;
+}
+.carta_reyes_header{
+	padding: 20px;
+}
+.carta_reyes_body{
+	/*background-color: #ffeacf;*/
+	padding: 10px 30px;
+}
+.carta_reyes_body h3{
+	color:  #066986;
+}
+.round-picture{
+	border-radius:100%;
+}
+.thumbnail{
+	cursor: pointer;
+	position: relative;
+	overflow-wrap: break-word;
+}
+.thumb-admin-buttons{
+/*	position: absolute;
+	top: 300;
+	left: 0;*/
+	text-align: center;
+	width: 100%;
+}
+
+.img-center{
+	margin: auto;
+}
+
+#new_user_button{
+	background: none;
+	border: 2px dashed #066986;
+	color:white;
+	min-height: 361.5px;
+
+
+}
+
+.nombre-usuario{
+	height: 30px;
+	overflow: hidden;
+	overflow-wrap: break-word;
+}
+
+.titulo-usuario{
+	height: 50px;
+	overflow: hidden;
+	overflow-wrap: break-word;
+}
+.titulo-producto{
+	text-align: left;
+	font-size:20px;
+	font-weight: bold;
+	font-family: 'Josefin Sans';
+}
+
+.bigLetters{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.profile-pic-wrap{
+	height: 174.5px;
+
+	background-position: center;
+	background-size: cover;
+	-ms-behavior: url(css/backgroundsize.htc);
+
+}
+
+form .link-name{
+	display: inline-block;
+	width: 30%;
+}
+
+form .link-url{
+	display: inline-block;
+	width: 55%;
+}
+
+.thumb-admin-buttons .edit-user img{
+	display: none;
+	/*content: "<img src='http://pokandroll.net/reyesmagos/img/iconos/editSmall.png' alt='editar'>";*/
+}
+.thumb-admin-buttons .remove-user img{
+	display: none;
+	/*content: "<img src='http://pokandroll.net/reyesmagos/img/iconos/removeSmall.png' alt='borrar'>";*/
+}
+
+
+@media screen and (max-width: 400px){
+	.thumb-admin-buttons .edit-user img{
+		display: inline-block;
+
+	}
+	.thumb-admin-buttons .remove-user img{
+		display: inline-block;
+	}
+	.thumb-admin-buttons .edit-user{
+		margin-top: 10px;
+		
+	}
+	.thumb-admin-buttons .remove-user{
+		margin-top: 10px;
+		
+	}
+	.thumb-admin-buttons .edit-user .edit-button-text{
+		display: none;
+
+	}
+	.thumb-admin-buttons .remove-user .remove-button-text{
+		display: none;
+	}	
+}
+@media screen and (max-width: 1145px) and (min-width: 992px){
+	.thumb-admin-buttons .edit-user img{
+		display: inline-block;
+	}
+	.thumb-admin-buttons .remove-user img{
+		display: inline-block;
+
+	}
+	.thumb-admin-buttons .edit-user .edit-button-text{
+		display: none;
+
+	}
+	.thumb-admin-buttons .remove-user .remove-button-text{
+		display: none;
+	}
+
+	
+}
+
+
+
+
+
+
+/*Controls*/
+.remove-item-button{
+	background: linear-gradient(red, #330000);
+	color:white;
+	font-weight: bold;
+	float: right;
+	padding-right: 4px;
+	padding-left: 4px;
+	border-radius: 4px;
+}
+#new-prod-modal .modal-dialog, #edit-prod-modal .modal-dialog{
+	/*width: 90%;*/
+}
+/*Pictures*/
+.product-main-thumb{
+	margin: auto;
+	margin-bottom:20px;
+	/*max-width: 500px;*/
+}
+.product-thumb{
+	max-width: 200px;
+	margin: 5px;
+}
+
+#login_wrap{
+	padding: 40px 50px;
+	max-width: 500px;
+}
+.me{
+	box-shadow:0px 0px 10px 3px #222222;
+}
+@media screen and (max-width: 385px){
+	
+.editar-producto img, .open-rmv-modal img{
+	width: 20px;
+
+}
+}
+/*padding*/
+.centrar{
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+/*colors*/
+.white{
+	color:white;
+}
+.black{
+	color:black;
+}
+
+
+/*fonts*/
+.pacific{
+	font-family: 'Pacifico';
+}
+.josefin{
+	font-family: 'Josefin Sans';
+}
